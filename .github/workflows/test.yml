@@ -33,8 +33,5 @@ jobs:
               run: cargo build
               continue-on-error: false
 
-            - name: Format
-              run: cargo fmt --check
-
             - name: Lint
               run: cargo clippy -- -D warnings

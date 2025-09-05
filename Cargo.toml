@@ -1,0 +1,23 @@
+[package]
+name = "rofi-unicode"
+authors = ["Rolv Apneseth"]
+description = "Unicode selector plugin for rofi"
+version = "0.0.1"
+edition = "2024"
+license = "AGPL-3.0"
+
+[dependencies]
+glib = "0.21"
+rofi-mode = "0.5"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[profile.release]
+strip = true
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[lib]
+crate-type = ["cdylib"]

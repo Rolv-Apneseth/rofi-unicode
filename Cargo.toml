@@ -2,7 +2,7 @@
 name = "rofi-unicode"
 authors = ["Rolv Apneseth"]
 description = "Unicode selector plugin for rofi"
-version = "0.0.1"
+version = "0.0.2"
 edition = "2024"
 license = "AGPL-3.0"
 
